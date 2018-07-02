@@ -3,6 +3,9 @@ import kinesiologia.*
 describe "group of tests" {
 
 //**************************objetos para puntos 1 y 2*********************************/
+  
+    // TODO: las inicializaciones por default deben quedar definidas en la clase
+    //TODO: Nunca se debe poner variables que denoten el tipo: hay que usar polimorfismo
 	var magneto = new Magneto(color="blanco", esMinitramp= false)
 	var bicicleta = new Bicicleta(color="blanco",esMinitramp= false)
 	var minitramp = new Minitramp(color="blanco", esMinitramp= true)
@@ -66,6 +69,7 @@ describe "group of tests" {
 	test "usar bicicleta milena" {
 		assert.notThat(milena.puedeUsarAparato(bicicleta))		
 		/*TODO: milena usa la bicicleta (cosa que no puede hacer!) */
+		//TODO: checkear error
 	}
 	
 	test "usar minitramp leo" {
@@ -77,6 +81,7 @@ describe "group of tests" {
 	test "usar minitramp milena" {
 		assert.notThat(milena.puedeUsarAparato(minitramp))
 		/*TODO: milena usa el minitramp (cosa que no puede hacer!) */
+		//TODO: checkear error
 		
 	}
 //***********************Punto 2*************************************
@@ -90,6 +95,7 @@ describe "group of tests" {
 	test "sesion milena" {
 		assert.notThat(milena.puedeHacerLaRutina())
 		/* milena hace la sesion (cosa que no puede hacer) */
+		//TODO: checkear error
 	}	
 
 //***********************Punto 3*************************************//
